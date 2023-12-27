@@ -117,7 +117,7 @@
     padding: 0.2rem 1rem;
     box-sizing: border-box;
     font-weight: 300;
-    margin: 1.6rem 0;
+    /* margin: 1.6rem 0; */
     position: relative;
     top: -0.5rem;
     cursor: pointer;
@@ -507,7 +507,7 @@ hr {
 }
 
 @media (max-width:1250px) {
-    .mf_investCard{
+    .mf_investCard {
         transform: scale(.8);
         padding: 0 16px;
     }
@@ -999,13 +999,15 @@ hr {
     width: 80px;
     height: 40px;
 }
-.head_product_option{
-   display:none;
+
+.head_product_option {
+    display: none;
     position: fixed;
     top: 62px;
     right: 185px;
     transition: 2s linear ease-in-out;
 }
+
 .head_product_option ul {
     list-style-type: none;
     width: 245px;
@@ -1017,7 +1019,7 @@ hr {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 .head_product_option hr {
@@ -1027,15 +1029,15 @@ hr {
 .head_product_option ul li {
     color: #484848;
     padding: 12px 0;
-    font-weight: 400;
     font-size: 13px;
     opacity: .8;
+    margin: 0;
 }
 
 .head_product_option ul li a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #484848;
-
+    font-weight: 100 !important;
 }
 
 .head_product_option ul li a:hover {
@@ -1053,6 +1055,7 @@ hr {
     box-shadow: 1px 1px 12px .25px #484848;
     padding: 0 0 24px;
     border-radius: 6px;
+    margin: 0;
 }
 
 .head_explorer_option ul {
@@ -1069,8 +1072,8 @@ hr {
 }
 
 .head_explorer_option ul li {
-    line-height: 1.8;
-    padding: 0 12px;
+    padding: 4px 12px;
+    margin: 0;
 }
 
 .head_explorer_option ul .link_first {
@@ -1079,7 +1082,7 @@ hr {
 
 .head_explorer_option ul li a {
     color: #484848;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 12px;
 }
 
@@ -1089,7 +1092,8 @@ hr {
 
 .login_link {
     position: fixed;
-    height: 90px;
+    /* height: 90px; */
+    height: 20px;
     width: 210px;
     top: 62px;
     right: 155px;
@@ -1097,6 +1101,7 @@ hr {
     background-color: #fff;
     box-shadow: 1px 1px 12px .25px #484848;
     display: none;
+    transition: height 1s ease-in-out 1s;
 }
 
 .login_link ul {
@@ -1106,31 +1111,29 @@ hr {
 
 .login_link li {
     box-sizing: border-box;
-    line-height: 3.2;
+    margin: 2px 0;
     display: flex;
     justify-content: baseline;
+}
+
+.login_link li a {
+    color: #484848a7;
+    font-size: 12px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
 }
 
 .login_link li img {
     height: 25px;
     width: 30px;
-    margin: 10px 8px 0 0;
+    margin: 10px 8px 0 0 !important;
 }
 
-.login_link li a {
-    color: #484848a7;
-    font-size: 14px;
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    font-weight: 200;
+.dropdownBtn:hover .dropdown{
+    display: flex !important;
 }
-
-.visible{
-   display:block;
-   z-index: 15;
+.head_login_btn:hover .login_link{
+    height: 90px ;
 }
-.visible2{
-    display:flex;
-    z-index: 15;
- }
