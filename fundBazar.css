@@ -1092,8 +1092,7 @@ hr {
 
 .login_link {
     position: fixed;
-    /* height: 90px; */
-    height: 20px;
+    height: 90px;
     width: 210px;
     top: 62px;
     right: 155px;
@@ -1133,7 +1132,4 @@ hr {
 
 .dropdownBtn:hover .dropdown{
     display: flex !important;
-}
-.head_login_btn:hover .login_link{
-    height: 90px ;
 }
