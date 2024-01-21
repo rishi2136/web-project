@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box !important;
 }
-
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .chat {
     background-color: black;
     color: #fff;
@@ -42,7 +42,8 @@
     background-color: #fff;
     height: 96px;
     display: flex;
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 100%;
     z-index: 2;
     box-sizing: border-box;
@@ -130,13 +131,13 @@
 
 .hero_sec {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
     background-color: #fff;
     height: 600px;
     width: 100%;
-    padding: 100px 150px 70px;
+    box-sizing: border-box;
+    padding: 0 150px 70px;
 }
 
 .hero_secText_box {
@@ -192,8 +193,6 @@
     display: flex;
     padding: 0 36px;
     box-sizing: border-box;
-    border: transparent;
-
 }
 
 .hero_secImg img {
@@ -254,6 +253,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
     padding: 4.75rem 150px 2rem;
 
 }
@@ -264,7 +264,6 @@ hr {
     background-color: #fff;
     box-sizing: border-box;
     width: 100%;
-    margin: 8px;
     font-weight: 700;
 }
 
@@ -325,7 +324,6 @@ hr {
 .stat_data {
     background-color: transparent;
     height: 80px;
-    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -392,10 +390,11 @@ hr {
 }
 
 .explore_box1 {
-    width: 1200px;
+    width:100%;
     height: 250px;
     background-color: #f7faff;
     display: flex;
+    flex-wrap: nowrap;
     box-sizing: border-box;
     padding-top: 20px;
 }
@@ -488,6 +487,11 @@ hr {
     font-weight: 200;
 }
 
+.mf_invest_card{
+    display: flex;
+    width: 100%;
+}
+
 .mf_investCard {
     width: 270px;
     height: 330px;
@@ -504,13 +508,6 @@ hr {
 .mf_investCard:hover {
     position: relative;
     top: -4px;
-}
-
-@media (max-width:1250px) {
-    .mf_investCard {
-        transform: scale(.8);
-        padding: 0 16px;
-    }
 }
 
 .cardDetail {
@@ -746,6 +743,7 @@ hr {
     width: 100%;
     height: 56px;
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     list-style-type: none;
     padding: 0 15px;
@@ -811,10 +809,15 @@ hr {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    overflow: auto;
     box-sizing: border-box;
     padding: 20px 150px;
+}
+
+.invest_options{
+    width:100% !important;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
 }
 
 .footer_optionsec {
@@ -826,7 +829,7 @@ hr {
 .footer_one h3 {
     font-size: 14px;
     color: #ff9a2e;
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 
 .footer_one ul {
